@@ -6,7 +6,7 @@ Form::Form(){
     gradetosign = 150;
     gradetoexec = 150;
     sign = false;
-    std::cout << "default form constructor called" << std::endl;
+    std::cout << "default Form constructor called" << std::endl;
 }
 
 Form::~Form(){
@@ -30,7 +30,7 @@ Form::Form(Form const &cpi){
 }
 
 Form    &Form::operator=(Form const &cp){
-    std::cout << "overloaded form copy operator called" << std::endl;
+    std::cout << "overloaded Form copy operator called" << std::endl;
     name = cp.name;
     gradetosign = cp.gradetosign;
     gradetoexec = cp.gradetoexec;
@@ -38,11 +38,11 @@ Form    &Form::operator=(Form const &cp){
     return *this;
 }
 
-std::ostream& operator<<(std::ostream& out, Form& form){
-    out << form.getname();
-    out << form.getgtosign();
-    out << form.getgtoexec();
-    out << form.getsign();
+std::ostream& operator<<(std::ostream& out, Form& Form){
+    out << Form.getname();
+    out << Form.getgtosign();
+    out << Form.getgtoexec();
+    out << Form.getsign();
     return (out);
 }
 

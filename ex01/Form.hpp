@@ -1,5 +1,5 @@
-#ifndef FORM_HPP
-#define FORM_HPP
+#ifndef Form_HPP
+#define Form_HPP
 
 # include <string>
 # include <iostream>
@@ -19,7 +19,7 @@ class Form{
         Form(std::string nm, int gtosign, int gtoexec);
         Form(Form const &cpi);
         Form& operator=(Form const &cp);
-        friend std::ostream& operator<<(std::ostream& out, Form& form);
+        friend std::ostream& operator<<(std::ostream& out, Form& Form);
 
         std::string getname();
         bool getsign();
