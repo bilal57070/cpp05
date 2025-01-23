@@ -17,6 +17,7 @@ class Bureaucrat{
         Bureaucrat(const std::string nm, int r);
         Bureaucrat(Bureaucrat const &cpi);
         Bureaucrat& operator=(Bureaucrat const &cp);
+        friend std::ostream& operator<<(std::ostream& out, const Bureaucrat& o);
         std::string getName()const;
         int getGrade()const;
         void upgrade();

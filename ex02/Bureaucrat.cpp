@@ -32,6 +32,12 @@ Bureaucrat &Bureaucrat::operator=(Bureaucrat const &cp){
     return *this;
 }
 
+std::ostream& operator<<(std::ostream& out, Bureaucrat &o){
+    out << o.getName() << std::endl;
+    out << o.getGrade() << std::endl;
+    return (out);
+}
+
 std::string Bureaucrat::getName()const{
     return name;
 }

@@ -20,6 +20,7 @@ class Bureaucrat{
         int getGrade();
         void upgrade();
         void downgrade();
+        friend std::ostream& operator<<(std::ostream& out, const Bureaucrat& o);
 
         class GradetoolowException : public std::exception {
             public:
